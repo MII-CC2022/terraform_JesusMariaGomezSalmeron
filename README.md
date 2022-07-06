@@ -1,2 +1,2 @@
 # terraform_JesusMariaGomezSalmeron
-Práctica de Terraform
+Práctica de Terraform en Google Cloud.
