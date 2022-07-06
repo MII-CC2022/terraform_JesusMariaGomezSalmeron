@@ -4,7 +4,7 @@ resource "google_compute_address" "static" {
 
 resource"google_compute_instance" "default" {
         name = "nueva-terraform-madrid"
-        machine_type = "f1-micro"
+        machine_type = "e2-micro"
         zone = "europe-southwest1-a"
         boot_disk{
                 initialize_params{
