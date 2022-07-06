@@ -1,3 +1,7 @@
+resource "google_compute_address" "static" {
+        name = "ip-mv"
+}
+
 resource"google_compute_instance" "default" {
         name = "nueva-terraform-madrid"
         machine_type = "f1-micro"
@@ -10,7 +14,7 @@ resource"google_compute_instance" "default" {
         network_interface{
                 network = "default"
                 access_config {
-                        nat_ip= google_compute_address.static.address
                 }
         }
 }
+
